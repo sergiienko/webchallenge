@@ -651,7 +651,7 @@ h6 { font-size: 14px; }
 	color: #999;
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
-	padding: 204px 15px 0;
+	padding: 194px 0 0;
 	/*background: #FFF url(../img/news-1.jpg) no-repeat 0 0;*/
 }
 
@@ -670,6 +670,7 @@ h6 { font-size: 14px; }
 .ba-title-news-item {
 	margin: 10px 0 5px;
 	font-size: 14px;
+	padding-top: 10px;
 }
 
 .ba-postedby-news {
@@ -826,4 +827,16 @@ h6 { font-size: 14px; }
 	font-size: 14px;
 	margin: 0;
 	padding: 15px 0;
+}
+
+.ba-item-news-positioner {
+	border: 1px solid #DDD;
+	border-top: 0;
+	padding: 0 15px;
+	min-height: 75px;
+	max-width: 360px;
+	-webkit-border-bottom-left-radius: 3px;
+	        border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	        border-bottom-right-radius: 3px;
 }
