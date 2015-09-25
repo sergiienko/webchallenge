@@ -18,15 +18,19 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="js/script.js"></script>
-
 </head>
 <body>
 	<header class="ba-header">
 		<div class="ba-container">
+
+			<!-- BEGIN ba-logo -->
+
 			<a href="#" class="ba-logo ba-float-left">
 				<img class="ba-logo__img" src="img/logo.png" alt="Logo">
 			</a>
+
+			<!-- END ba-logo -->
+
 			<div class="ba-float-right">
 
 				<!-- BEGIN ba-main-menu -->
@@ -64,6 +68,8 @@
 
 				<!-- END ba-search -->
 
+				<!-- BEGIN ba-header__ui -->
+
 				<ul class="ba-header__ui ba-float-left">
 					<li>
 						<a href="#">Sign in</a>
@@ -73,6 +79,9 @@
 						<a class="ba-fb-icon" href="#" target="_blank"></a>
 					</li>
 				</ul>
+
+				<!-- END ba-header__ui -->
+
 			</div>
 		</div>
 	</header>
@@ -376,22 +385,5 @@
 			<p>&copy; 2015 All Rights Reserved</p>
 		</div>
 	</footer>
-
-	<script>
-	document.getElementById('btn-search-trigger').addEventListener('click', function(e) {
-		e.preventDefault();
-		var searchForm = document.getElementById('search-form');
-		if (!hasClass(searchForm, 'ba-search-active')) {
-			var old = searchForm.getAttribute('class');
-			searchForm.setAttribute('class', old + ' ba-search-active');
-			old = e.srcElement.getAttribute('class');
-			e.srcElement.setAttribute('class', old + ' ba-btn-search-showed');
-		}
-		else {
-			searchForm.setAttribute('class', 'ba-search');
-			e.srcElement.setAttribute('class', 'ba-btn-show-search');
-		}
-	});
-	</script>
 </body>
 </html>
