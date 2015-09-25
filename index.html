@@ -22,52 +22,63 @@
 
 </head>
 <body>
-<div class="ba-wrapper">
 	<header class="ba-header">
-		<div class="ba-grid">
-			<div class="ba-width-1-10">
-				<a href="#" class="ba-logo"></a>
-			</div>
-			<div class="ba-width-2-3">
-				<div class="ba-main-menu-positioner">
-					<nav class="ba-menu" role="navigation">
-						<ul>
-							<li>
-								<a href="#" class="ba-menu-item">Create</a>
-							</li><li>
-								<a href="#" class="ba-menu-item">Explore</a>
-							</li><li>
-								<a href="#" class="ba-menu-item">How it works</a>
-							</li><li>
-								<a href="#" class="ba-menu-item">News</a>
-							</li><li>
-								<a href="#" class="ba-menu-item">About us</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="ba-width-7-30" style="position: relative;">
-				<a id="btn-search-trigger" href="#" class="ba-btn-show-search"></a>
-				<nav class="ba-user-cta" role="navigation">
-					<a href="#" class="ba-sign-in">Sign in</a>
-					<span class="ba-vertical-align-middle">
-						<a href="#" class="ba-join-us">Join us</a>
-					</span>
+		<div class="ba-container">
+			<a href="#" class="ba-logo ba-float-left">
+				<img class="ba-logo__img" src="img/logo.png" alt="Logo">
+			</a>
+			<div class="ba-float-right">
+
+				<!-- BEGIN ba-main-menu -->
+
+				<nav class="ba-float-left" role="navigation">
+					<ul class="ba-main-menu">
+						<li>
+							<a href="#" class="ba-main-menu__item">Create</a>
+						</li><li>
+							<a href="#" class="ba-main-menu__item">Explore</a>
+						</li><li>
+							<a href="#" class="ba-main-menu__item">How it works</a>
+						</li><li>
+							<a href="#" class="ba-main-menu__item">News</a>
+						</li><li>
+							<a href="#" class="ba-main-menu__item">About us</a>
+						</li>
+					</ul>
 				</nav>
+
+				<!-- END ba-main-menu -->
+
+				<!-- BEGIN ba-search -->
+
+				<div class="ba-search ba-float-left">
+					<input class="ba-search__checkbox-show-dropdown" id="ba-show-dropdown" type="checkbox">
+					<label class="ba-search__btn-show-dropdown" for="ba-show-dropdown"></label>
+					<div id="search-form" class="ba-search__dropdown">
+						<form>
+							<input class="ba-search__submit" type="submit" value="">
+							<input class="ba-search__input" type="search">
+						</form>
+					</div>
+				</div>
+
+				<!-- END ba-search -->
+
+				<ul class="ba-header__ui ba-float-left">
+					<li>
+						<a href="#">Sign in</a>
+					</li>
+					<li class="ba-relative">
+						<a class="ba-join-us" href="#">Join us</a>
+						<a class="ba-fb-icon" href="#" target="_blank"></a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div id="search-form" class="ba-search">
-			<form>
-				<input type="submit" class="ba-btn-search-submit">
-				<input type="search" class="ba-search-field">
-			</form>
 		</div>
 	</header>
 	<main role="main">
 		<section class="ba-slider">
 			<div class="ba-grid ba-grid-nopad">
-				<a href="#" class="ba-fb-icon"></a>
 				<div class="ba-width-1-1">
 					<div class="ba-slide ba-slide-1">
 						<div class="ba-slide-title">
@@ -365,7 +376,6 @@
 			<p>&copy; 2015 All Rights Reserved</p>
 		</div>
 	</footer>
-</div>
 
 	<script>
 	document.getElementById('btn-search-trigger').addEventListener('click', function(e) {
